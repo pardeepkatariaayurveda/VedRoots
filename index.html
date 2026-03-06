@@ -807,7 +807,7 @@
     <!-- Header -->
     <div style="background:#E8830A; padding:20px 28px; display:flex; align-items:center; justify-content:space-between;">
       <h2 style="color:white; font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:800; margin:0;">
-        <img src="logo.svg" alt="VedRoots" style="width:36px;height:36px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:10px;"> Book Your Free Consultation
+        <img src="logo.svg" alt="VedRoots" style="width:56px;height:56px;object-fit:cover;clip-path:circle(46% at 50% 50%);vertical-align:middle;margin-right:12px;"> Book Your Free Consultation
       </h2>
       <button onclick="closePopup()" style="
         background:rgba(255,255,255,0.2); border:none; color:white;
@@ -1208,31 +1208,131 @@
   <div class="test-header reveal">
     <div class="section-label">Patient Voices</div>
     <h2 class="section-title">Words of Healing</h2>
+    <p class="section-body" style="max-width:500px;margin:0.5rem auto 0;color:rgba(253,246,227,0.6);">Real stories from patients across India and abroad.</p>
   </div>
-  <div class="test-grid">
-    <div class="test-card reveal">
-      <div class="test-quote">"</div>
-      <div class="test-stars">★★★★★</div>
-      <div class="test-text">My creatinine levels were dangerously high. After three months of Vaid Ji's treatment, my kidneys are functioning far better. I was told surgery might be needed — today I need nothing of the sort. Truly miraculous herbal medicine.</div>
-      <div class="test-name">Gurpreet Singh Dhillon</div>
-      <div class="test-loc">Amritsar, Punjab</div>
-    </div>
-    <div class="test-card reveal d1">
-      <div class="test-quote">"</div>
-      <div class="test-stars">★★★★★</div>
-      <div class="test-text">I have been a diabetic for 12 years. Vaid Pardeep Ji's formulations have helped me reduce my medication significantly. His approach is deeply personalised — he doesn't treat the disease, he treats the person. Our family trusts no one else.</div>
-      <div class="test-name">Meena Sharma</div>
-      <div class="test-loc">Delhi</div>
-    </div>
-    <div class="test-card reveal d2">
-      <div class="test-quote">"</div>
-      <div class="test-stars">★★★★★</div>
-      <div class="test-text">I live in Canada and consult with Dr. Oshin online. The medicines are sent to me and the results have been remarkable for my psoriasis. Four generations of knowledge — you can feel the difference from the very first consultation.</div>
-      <div class="test-name">Rajinder Bains</div>
-      <div class="test-loc">Toronto, Canada</div>
-    </div>
+
+  <!-- Carousel -->
+  <div class="carousel-wrap" style="position:relative;max-width:900px;margin:0 auto;overflow:hidden;">
+
+    <div class="carousel-track" id="carouselTrack" style="display:flex;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);">
+
+      <!-- Card 1 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">My creatinine levels were dangerously high. After three months of Vaid Ji's treatment, my kidneys are functioning far better. I was told surgery might be needed — today I need nothing of the sort. Truly miraculous herbal medicine.</div>
+        <div class="test-name">Gurpreet Singh Dhillon</div>
+        <div class="test-loc">Amritsar, Punjab</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">I have been a diabetic for 12 years. Vaid Pardeep Ji's formulations have helped me reduce my medication significantly. His approach is deeply personalised — he doesn't treat the disease, he treats the person. Our family trusts no one else.</div>
+        <div class="test-name">Meena Sharma</div>
+        <div class="test-loc">Delhi</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">I live in Canada and consult with Dr. Oshin online. The medicines are sent to me and the results have been remarkable for my psoriasis. Four generations of knowledge — you can feel the difference from the very first consultation.</div>
+        <div class="test-name">Rajinder Bains</div>
+        <div class="test-loc">Toronto, Canada</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">My thyroid levels were highly unstable for years. After just two months of Vaid Ji's treatment, my TSH levels normalised completely. I am off synthetic hormones now. This dawakhana is a true blessing for our family.</div>
+        <div class="test-name">Sunita Arora</div>
+        <div class="test-loc">Ludhiana, Punjab</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">I suffered from chronic piles for over 5 years and had tried everything. Vaid Pardeep Ji's Ayurvedic treatment resolved it completely in 6 weeks without any surgery. I am deeply grateful and have referred many friends here.</div>
+        <div class="test-name">Harjinder Singh</div>
+        <div class="test-loc">Patiala, Punjab</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">My son had severe eczema since childhood. Doctors gave creams that never cured it. Dr. Oshin's blood purification treatment cleared it in 3 months. The results are permanent — no relapse in over a year. A life-changing experience.</div>
+        <div class="test-name">Kavita Mehta</div>
+        <div class="test-loc">Chandigarh</div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">I consulted online from Dubai for my fatty liver and high SGPT levels. Medicines were couriered to me within days. Within 10 weeks my liver function tests are completely normal. Vaid Ji's knowledge and care is unmatched anywhere.</div>
+        <div class="test-name">Manpreet Gill</div>
+        <div class="test-loc">Dubai, UAE</div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="caro-card">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-text">Suffering from asthma since childhood, I had become dependent on inhalers. Vaid Ji's herbal course over 4 months has reduced my attacks by 90%. I breathe freely now. This legacy of healing is something truly rare and precious.</div>
+        <div class="test-name">Rohit Verma</div>
+        <div class="test-loc">Jalandhar, Punjab</div>
+      </div>
+
+    </div><!-- end track -->
+
+    <!-- Prev / Next buttons -->
+    <button onclick="carouselMove(-1)" style="
+      position:absolute; top:50%; left:-20px; transform:translateY(-50%);
+      width:46px; height:46px; border-radius:50%;
+      background:var(--saffron); border:none; color:white;
+      font-size:1.2rem; cursor:pointer; z-index:10;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 16px rgba(0,0,0,0.3);
+      transition: background 0.3s, transform 0.2s;
+    " onmouseover="this.style.background='#C4740D';this.style.transform='translateY(-50%) scale(1.1)'"
+       onmouseout="this.style.background='#E8830A';this.style.transform='translateY(-50%) scale(1)'">‹</button>
+
+    <button onclick="carouselMove(1)" style="
+      position:absolute; top:50%; right:-20px; transform:translateY(-50%);
+      width:46px; height:46px; border-radius:50%;
+      background:var(--saffron); border:none; color:white;
+      font-size:1.2rem; cursor:pointer; z-index:10;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 16px rgba(0,0,0,0.3);
+      transition: background 0.3s, transform 0.2s;
+    " onmouseover="this.style.background='#C4740D';this.style.transform='translateY(-50%) scale(1.1)'"
+       onmouseout="this.style.background='#E8830A';this.style.transform='translateY(-50%) scale(1)'">›</button>
+
   </div>
+
+  <!-- Dots -->
+  <div id="carouselDots" style="display:flex;justify-content:center;gap:8px;margin-top:32px;"></div>
+
 </section>
+
+<style>
+  .carousel-wrap { padding: 0 30px; }
+  .caro-card {
+    min-width: 100%; padding: 40px 36px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(237,224,196,0.09);
+    box-sizing: border-box;
+  }
+  @media (max-width: 600px) {
+    .carousel-wrap { padding: 0 10px; }
+    .caro-card { padding: 28px 20px; }
+  }
+</style>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1417,6 +1517,61 @@
     btn.disabled = true;
     setTimeout(closePopup, 2000);
   }
+
+  // ── CAROUSEL ──
+  let carouselIndex = 0;
+  const totalCards = 8;
+  let autoSlide;
+
+  function buildDots() {
+    const dots = document.getElementById('carouselDots');
+    if (!dots) return;
+    dots.innerHTML = '';
+    for (let i = 0; i < totalCards; i++) {
+      const d = document.createElement('div');
+      d.style.cssText = `width:${i===0?'24px':'8px'};height:8px;border-radius:4px;background:${i===0?'#E8830A':'rgba(237,224,196,0.3)'};transition:all 0.3s;cursor:pointer;`;
+      d.onclick = () => goTo(i);
+      dots.appendChild(d);
+    }
+  }
+
+  function updateDots() {
+    const dots = document.getElementById('carouselDots');
+    if (!dots) return;
+    [...dots.children].forEach((d, i) => {
+      d.style.width = i === carouselIndex ? '24px' : '8px';
+      d.style.background = i === carouselIndex ? '#E8830A' : 'rgba(237,224,196,0.3)';
+    });
+  }
+
+  function goTo(index) {
+    carouselIndex = index;
+    const track = document.getElementById('carouselTrack');
+    if (track) track.style.transform = `translateX(-${carouselIndex * 100}%)`;
+    updateDots();
+    resetAutoSlide();
+  }
+
+  function carouselMove(dir) {
+    carouselIndex = (carouselIndex + dir + totalCards) % totalCards;
+    goTo(carouselIndex);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => carouselMove(1), 5000);
+  }
+
+  // Touch/swipe support
+  let touchStartX = 0;
+  document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+  document.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) carouselMove(diff > 0 ? 1 : -1);
+  });
+
+  buildDots();
+  resetAutoSlide();
 
   function checkMobile() {
     const isMobile = window.innerWidth <= 600;
