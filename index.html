@@ -1001,16 +1001,27 @@
       <a href="https://wa.me/919465628195" target="_blank" class="btn-outline">💬 WhatsApp Us</a>
     </div>
   </div>
-  <div class="hero-right" style="padding:0;overflow:hidden;position:relative;">
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;border:1px solid rgba(196,116,13,0.1);border-radius:50%;pointer-events:none;z-index:1;"></div>
+  <div class="hero-right" style="padding:0;overflow:hidden;position:relative;background:#2E1F14;">
+    <!-- Image -->
     <img src="pardeep.png" alt="Vaid Pardeep Kataria"
-      style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:relative;z-index:2;">
+      style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:relative;z-index:1;">
+    <!-- Left fade to match dark hero background -->
+    <div style="position:absolute;inset:0;z-index:2;
+      background:linear-gradient(to right, #2E1F14 0%, rgba(46,31,20,0.5) 30%, transparent 60%);
+      pointer-events:none;">
+    </div>
+    <!-- Top fade -->
+    <div style="position:absolute;inset:0;z-index:2;
+      background:linear-gradient(to bottom, #2E1F14 0%, transparent 20%);
+      pointer-events:none;">
+    </div>
+    <!-- Bottom overlay with name -->
     <div style="position:absolute;bottom:0;left:0;right:0;z-index:3;
-      background:linear-gradient(to top, rgba(46,31,20,0.92) 0%, transparent 100%);
-      padding:40px 36px 32px;">
-      <div style="font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--saffron);margin-bottom:6px;">3rd Generation Vaidya</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:white;line-height:1.2;margin-bottom:4px;">Vaid Pardeep Kataria</div>
-      <div style="font-size:0.85rem;color:rgba(253,246,227,0.65);font-style:italic;">~100 Years of Family Legacy · Bathinda, Punjab</div>
+      background:linear-gradient(to top, rgba(46,31,20,0.95) 0%, rgba(46,31,20,0.4) 60%, transparent 100%);
+      padding:50px 40px 36px;">
+      <div style="font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--saffron);margin-bottom:8px;">3rd Generation Vaidya</div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;color:white;line-height:1.2;margin-bottom:6px;">Vaid Pardeep Kataria</div>
+      <div style="font-size:0.85rem;color:rgba(253,246,227,0.6);font-style:italic;">~100 Years of Family Legacy · Bathinda, Punjab</div>
     </div>
   </div>
 </section>
