@@ -660,9 +660,12 @@
     .nav-links a { font-size: 0.82rem; }
     .nav-cta { padding: 8px 16px; font-size: 0.8rem; }
 
-    .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-left { padding: 110px 6% 70px; }
-    .hero-right { display: block; height: 400px; width: 100%; }
+    .hero { grid-template-columns: 1fr; height: auto !important; min-height: auto; }
+    .hero-left { padding: 90px 6% 40px; }
+    .hero-right { height: auto !important; padding-top: 20px; background: #2E1F14; }
+    .hero-right img { position: relative !important; top: auto !important; left: auto !important; right: auto !important; transform: none !important; width: 80% !important; height: auto !important; max-width: 80% !important; display: block; margin: 0 auto; }
+    .hero-right > div[style*="position:absolute;bottom"] { position: relative !important; bottom: auto !important; left: auto !important; right: auto !important; padding: 20px 24px 30px; }
+    .hero-right > div[style*="inset:0"] { display: none !important; }
 
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-float { bottom: 10px; right: 10px; }
@@ -708,7 +711,9 @@
     }
 
     /* HERO */
-    .hero-left { padding: 90px 5% 60px; }
+    .hero-left { padding: 90px 5% 30px; }
+    .hero-right { height: 380px; }
+    .hero-right img { top: 0 !important; height: 100% !important; max-width: 95% !important; left: 50%; right: auto !important; transform: translateX(-15%); }
     .hero-badge { font-size: 0.62rem; padding: 5px 12px; }
     .hero-title { font-size: 2.2rem; }
     .hero-sub { font-size: 0.95rem; }
