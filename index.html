@@ -662,7 +662,7 @@
 
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 110px 6% 70px; }
-    .hero-right { display: none; }
+    .hero-right { display: block; height: 400px; width: 100%; }
 
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-float { bottom: 10px; right: 10px; }
@@ -1003,38 +1003,35 @@
       <a href="https://wa.me/919465628195" target="_blank" class="btn-outline">💬 WhatsApp Us</a>
     </div>
   </div>
-  <div class="hero-right" style="padding:0;overflow:hidden;position:relative;background:#2E1F14;max-height:100vh;">
-    <!-- Image: show upper body/face, fixed height -->
+  <div class="hero-right" style="padding:0;overflow:hidden;position:relative;background:#2E1F14;">
+    <!-- Image: positioned from top so head is never cut -->
     <img src="pardeep_hero.png" alt="Vaid Pardeep Kataria"
       style="
         position:absolute;
-        bottom:0; right:0;
-        height:95%;
+        top:5%; right:0;
+        height:88%;
         width:auto;
-        max-width:none;
+        max-width:80%;
         object-fit:contain;
-        object-position:bottom right;
+        object-position:top right;
         display:block;
         z-index:1;
       ">
-    <!-- Left fade -->
-    <div style="position:absolute;inset:0;z-index:2;
-      background:linear-gradient(to right, #2E1F14 0%, rgba(46,31,20,0.45) 25%, transparent 55%);
-      pointer-events:none;"></div>
-    <!-- Top fade -->
-    <div style="position:absolute;inset:0;z-index:2;
-      background:linear-gradient(to bottom, #2E1F14 0%, transparent 15%);
-      pointer-events:none;"></div>
-    <!-- Bottom name badge - positioned higher so visible in viewport -->
-    <div style="position:absolute;bottom:60px;left:32px;right:32px;z-index:3;">
-      <div style="display:inline-block;background:rgba(232,131,10,0.9);padding:4px 12px;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:white;margin-bottom:8px;">3rd Generation Vaidya</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:white;line-height:1.15;margin-bottom:5px;text-shadow:0 2px 12px rgba(0,0,0,0.5);">Vaid Pardeep Kataria</div>
-      <div style="font-size:0.82rem;color:rgba(253,246,227,0.7);font-style:italic;text-shadow:0 1px 6px rgba(0,0,0,0.4);">~100 Years of Family Legacy · Bathinda, Punjab</div>
+    <!-- Left fade — very gradual, no visible line -->
+    <div style="position:absolute;inset:0;z-index:2;pointer-events:none;
+      background:linear-gradient(to right, #2E1F14 0%, rgba(46,31,20,0.85) 15%, rgba(46,31,20,0.3) 35%, rgba(46,31,20,0.05) 55%, transparent 70%);"></div>
+    <!-- Top fade — ultra soft, no visible line -->
+    <div style="position:absolute;inset:0;z-index:2;pointer-events:none;
+      background:linear-gradient(to bottom, rgba(46,31,20,0.4) 0%, rgba(46,31,20,0.1) 5%, transparent 12%);"></div>
+    <!-- Bottom fade -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:260px;z-index:2;pointer-events:none;
+      background:linear-gradient(to top, #2E1F14 0%, rgba(46,31,20,0.7) 40%, transparent 100%);"></div>
+    <!-- Name badge -->
+    <div style="position:absolute;bottom:44px;left:28px;right:12px;z-index:3;">
+      <div style="display:inline-block;background:rgba(232,131,10,0.92);padding:4px 12px;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:white;margin-bottom:8px;border-radius:2px;">3rd Generation Vaidya</div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:800;color:white;line-height:1.15;margin-bottom:5px;text-shadow:0 2px 16px rgba(0,0,0,0.6);">Vaid Pardeep Kataria</div>
+      <div style="font-size:0.82rem;color:rgba(253,246,227,0.7);font-style:italic;">~100 Years of Family Legacy · Bathinda, Punjab</div>
     </div>
-    <!-- Bottom dark fade -->
-    <div style="position:absolute;bottom:0;left:0;right:0;height:200px;z-index:2;
-      background:linear-gradient(to top, rgba(46,31,20,0.9) 0%, transparent 100%);
-      pointer-events:none;"></div>
   </div>
 </section>
 
